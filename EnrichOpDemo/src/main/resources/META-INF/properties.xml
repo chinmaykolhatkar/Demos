@@ -2,19 +2,7 @@
 <configuration>
   <!-- Memory settings for all demos -->
   <property>
-    <name>dt.attr.MASTER_MEMORY_MB</name>
-    <value>2048</value>
-  </property>
-  <property>
     <name>dt.application.*.operator.*.attr.MEMORY_MB</name>
-    <value>2048</value>
-  </property>
-  <property>
-    <name>dt.application.*.operator.*.attr.JVM_OPTIONS</name>
-    <value>-Xmx2048M</value>
-  </property>
-  <property>
-    <name>dt.application.*.operator.*.port.*.attr.BUFFER_MEMORY_MB</name>
-    <value>2048</value>
+    <value>4096</value>
   </property>
 </configuration>

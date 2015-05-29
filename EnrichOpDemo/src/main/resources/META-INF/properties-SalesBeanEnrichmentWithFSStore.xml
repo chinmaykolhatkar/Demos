@@ -16,7 +16,7 @@
     </property>
     <property>
         <name>dt.application.SalesBeanEnrichmentWithFSStore.operator.*.attr.MEMORY_MB</name>
-        <value>2048</value>
+        <value>1500</value>
     </property>
     <property>
         <name>dt.application.SalesBeanEnrichmentWithFSStore.operator.store.fileName</name>
