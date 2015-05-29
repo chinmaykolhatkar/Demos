@@ -1,0 +1,25 @@
+
+<!-- properties for the SalesBeanEnrichmentWithFSStore demo -->
+<configuration>
+  <!--FieldMappingFile for SalesBeanEnrichmentWithFSStore-->
+    <property>
+        <name>dt.application.SalesBeanEnrichmentWithFSStore.operator.BeanEnrichment.prop.includeFieldsStr</name>
+        <value>productCategory</value>
+    </property>
+    <property>
+        <name>dt.application.SalesBeanEnrichmentWithFSStore.operator.BeanEnrichment.prop.lookupFieldsStr</name>
+        <value>productId</value>
+    </property>
+    <property>
+        <name>dt.application.SalesBeanEnrichmentWithFSStore.operator.BeanEnrichment.prop.outputClass</name>
+        <value>com.datatorrent.demos.enrichop.SalesData</value>
+    </property>
+    <property>
+        <name>dt.application.SalesBeanEnrichmentWithFSStore.operator.*.attr.MEMORY_MB</name>
+        <value>2048</value>
+    </property>
+    <property>
+        <name>dt.application.SalesBeanEnrichmentWithFSStore.operator.store.fileName</name>
+        <value>test/productmapping.txt</value>
+    </property>
+</configuration>
