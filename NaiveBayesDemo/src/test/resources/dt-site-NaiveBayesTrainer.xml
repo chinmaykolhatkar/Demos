@@ -1,0 +1,17 @@
+
+<!-- properties for the NaiveBayesTrainer demo -->
+<configuration>
+  <!--FieldMappingFile for NaiveBayesTrainer-->
+  <property>
+    <name>dt.application.NaiveBayesTrainer.operator.vectorize.prop.trainFilePath</name>
+    <value>naivebayes/covtype/input.arff</value>
+  </property>
+  <property>
+    <name>dt.application.NaiveBayesTrainer.operator.weights.prop.modelDir</name>
+    <value>naivebayes/covtype/output</value>
+  </property>
+  <property>
+    <name>dt.application.NaiveBayesTrainer.operator.model.prop.modelDir</name>
+    <value>naivebayes/covtype/output</value>
+  </property>
+</configuration>

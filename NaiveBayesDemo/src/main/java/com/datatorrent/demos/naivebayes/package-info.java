@@ -13,25 +13,5 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.datatorrent.demos.enrichop;
 
-
-import com.datatorrent.demos.enrichop.SalesBeanEnrichmentWithFSStore;
-import org.apache.hadoop.conf.Configuration;
-import org.junit.Test;
-
-import com.datatorrent.api.LocalMode;
-
-public class ApplicationTest
-{
-  @Test
-  public void testSomeMethod() throws Exception
-  {
-	  LocalMode lma = LocalMode.newInstance();
-		Configuration conf =new Configuration(false);
-		conf.addResource("dt-site-SalesBeanEnrichmentWithFSStore.xml");
-		lma.prepareDAG(new SalesBeanEnrichmentWithFSStore(), conf);
-		LocalMode.Controller lc = lma.getController();
-		lc.run(10000);
-  }
-}
+package com.datatorrent.demos.naivebayes;

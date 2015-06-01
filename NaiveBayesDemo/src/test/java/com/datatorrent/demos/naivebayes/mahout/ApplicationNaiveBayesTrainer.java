@@ -13,24 +13,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.datatorrent.demos.enrichop;
+package com.datatorrent.demos.naivebayes.mahout;
 
-
-import com.datatorrent.demos.enrichop.SalesBeanEnrichmentWithFSStore;
+import com.datatorrent.api.LocalMode;
+import com.datatorrent.demos.naivebayes.mahout.NaiveBayesTrainer;
 import org.apache.hadoop.conf.Configuration;
 import org.junit.Test;
 
-import com.datatorrent.api.LocalMode;
-
-public class ApplicationTest
+public class ApplicationNaiveBayesTrainer
 {
   @Test
   public void testSomeMethod() throws Exception
   {
 	  LocalMode lma = LocalMode.newInstance();
 		Configuration conf =new Configuration(false);
-		conf.addResource("dt-site-SalesBeanEnrichmentWithFSStore.xml");
-		lma.prepareDAG(new SalesBeanEnrichmentWithFSStore(), conf);
+		conf.addResource("dt-site-NaiveBayesTrainer.xml");
+		lma.prepareDAG(new NaiveBayesTrainer(), conf);
 		LocalMode.Controller lc = lma.getController();
 		lc.run(10000);
   }

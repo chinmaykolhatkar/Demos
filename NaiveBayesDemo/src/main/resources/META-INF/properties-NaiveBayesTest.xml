@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- properties for the NaiveBayesTest demo -->
+<configuration>
+  <!--FieldMappingFile for NaiveBayesTest-->
+  <property>
+    <name>dt.application.NaiveBayesTest.operator.vectorize.prop.testFilePath</name>
+    <value>naivebayes/covtype/test.arff</value>
+  </property>
+  <property>
+    <name>dt.application.NaiveBayesTest.operator.vectorize.prop.modelDir</name>
+    <value>naivebayes/covtype/model</value>
+  </property>
+  <property>
+    <name>dt.application.NaiveBayesTest.operator.classifier.prop.modelDir</name>
+    <value>naivebayes/covtype/model</value>
+  </property>
+</configuration>
