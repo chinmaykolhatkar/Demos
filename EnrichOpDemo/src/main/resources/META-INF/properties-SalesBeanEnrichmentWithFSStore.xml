@@ -11,7 +11,7 @@
         <value>productId</value>
     </property>
     <property>
-        <name>dt.application.SalesBeanEnrichmentWithFSStore.operator.BeanEnrichment.prop.outputClass</name>
+        <name>dt.application.SalesBeanEnrichmentWithFSStore.operator.BeanEnrichment.prop.outputClassStr</name>
         <value>com.datatorrent.demos.enrichop.SalesData</value>
     </property>
     <property>

@@ -3,6 +3,6 @@
   <!-- Memory settings for all demos -->
   <property>
     <name>dt.application.*.operator.*.attr.MEMORY_MB</name>
-    <value>4096</value>
+    <value>1500</value>
   </property>
 </configuration>
