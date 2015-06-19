@@ -1,0 +1,45 @@
+
+<!-- properties for the HiveOp demo -->
+<configuration>
+  <!--FieldMappingFile for HiveOp-->
+    <property>
+        <name>dt.operator.HiveOp.prop.hivestore.filepath</name>
+        <value>hdfs://localhost:9000/user/hive/temp</value>
+    </property>
+    <property>
+        <name>dt.operator.HiveOp.prop.hivestore.databaseDriver</name>
+        <value>org.apache.hive.jdbc.HiveDriver</value>
+    </property>
+    <property>
+        <name>dt.operator.HiveOp.prop.hivestore.databaseUrl</name>
+        <value>jdbc:hive2://localhost:10000/default</value>
+    </property>
+    <property>
+        <name>dt.operator.HiveOp.prop.hivestore.connectionProperties</name>
+        <value>user:chinmay,password:passw0rd</value>
+    </property>
+    <property>
+        <name>dt.operator.HiveOp.prop.hivestore.userName</name>
+        <value>chinmay</value>
+    </property>
+    <property>
+        <name>dt.operator.HiveOp.prop.hivestore.password</name>
+        <value>passw0rd</value>
+    </property>
+    <property>
+        <name>dt.operator.HiveOp.prop.hivestore.connectionProperties</name>
+        <value>user:chinmay,password:passw0rd</value>
+    </property>
+    <property>
+        <name>dt.operator.HiveOp.prop.tablename</name>
+        <value>SalesData</value>
+    </property>
+    <property>
+        <name>dt.operator.FSRolling.prop.filePath</name>
+        <value>hdfs://localhost:9000/user/hive/temp</value>
+    </property>
+    <property>
+        <name>dt.operator.FSRolling.prop.maxLength</name>
+        <value>20971520</value>
+    </property>
+</configuration>
