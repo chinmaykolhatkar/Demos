@@ -15,6 +15,7 @@
   <modules>
     <module>EnrichOpDemo</module>
     <module>NaiveBayesDemo</module>
+    <module>HiveOpDemo</module>
   </modules>
 
 </project>
