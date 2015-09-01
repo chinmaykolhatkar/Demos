@@ -21,12 +21,12 @@ import com.datatorrent.common.util.BaseOperator;
 public class EnrichmentPOJOToJSON extends BaseOperator
 {
   private transient ObjectWriter writer;
-  private Class<?> inputClass;
+  private transient Class<?> inputClass;
   
-  public DefaultOutputPort<String> out = new DefaultOutputPort<String>();
+  public transient DefaultOutputPort<String> out = new DefaultOutputPort<String>();
   
-  @InputPortFieldAnnotation(schemaRequired=true)
-  public DefaultInputPort<Object> in = new DefaultInputPort<Object>() {
+  @InputPortFieldAnnotation(schemaRequired = true)
+  public transient DefaultInputPort<Object> in = new DefaultInputPort<Object>() {
     @Override
     public void setup(PortContext context)
     {

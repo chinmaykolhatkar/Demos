@@ -7,7 +7,7 @@ import com.datatorrent.api.StreamingApplication;
 import com.datatorrent.api.annotation.ApplicationAnnotation;
 import com.datatorrent.contrib.enrichment.POJOSchemaEnrichmentOperator;
 
-@ApplicationAnnotation(name = "EnrichmentSchemaSupportDemo")
+@ApplicationAnnotation(name = "DummyDemoApp")
 public class EnrichmentSchemaSupportApplication implements StreamingApplication
 {
 
