@@ -27,7 +27,6 @@ public class EnrichmentInputParser extends BaseOperator
     public void process(String tuple)
     {
       try {
-        System.out.println(tuple);
         out.emit(reader.readValue(tuple));
       } catch (IOException e) {
         e.printStackTrace();

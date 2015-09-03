@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <configuration>
-  <property>
-    <name>dt.attr.CONTAINER_JVM_OPTIONS</name>
-    <value>-server</value>
-  </property>
+    <property>
+        <name>dt.operator.Enrich.store.fileName</name>
+        <value>hdfs:///user/chinmay/test/productmapping.txt</value>
+    </property>
+    <property>
+        <name>dt.operator.Enrich.prop.lookupKeyStr</name>
+        <value>id</value>
+    </property>
+    <property>
+        <name>dt.operator.Enrich.prop.fieldToAddToOutputTupleStr</name>
+        <value>age:personAge</value>
+    </property>
+    <property>
+        <name>dt.operator.Enrich.prop.tupleFieldsToCopyFromInputToOutputStr</name>
+        <value>id:id,name:personName</value>
+    </property>
+    <property>
+        <name>dt.operator.JSONParser.port.out.attr.TUPLE_CLASS</name>
+        <value>com.datatorrent.demos.enrichment.pojo.Raw</value>
+    </property>
+    <property>
+        <name>dt.operator.Enrich.port.inputPojo.attr.TUPLE_CLASS</name>
+        <value>com.datatorrent.demos.enrichment.pojo.Raw</value>
+    </property>
+    <property>
+        <name>dt.operator.Enrich.port.outputPojo.attr.TUPLE_CLASS</name>
+        <value>com.datatorrent.demos.enrichment.pojo.Enriched</value>
+    </property>
+    <property>
+        <name>dt.attr.CONTAINER_JVM_OPTIONS</name>
+        <value>-server</value>
+    </property>
 </configuration>
